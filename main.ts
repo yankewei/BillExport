@@ -67,7 +67,7 @@ for (const billLocator of billsLocator) {
     ]);
 
     // Skip the '自动还款' bill
-    if (billName === '自动还款') {
+    if (billName === "自动还款") {
       continue;
     }
 
