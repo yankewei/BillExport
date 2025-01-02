@@ -66,6 +66,11 @@ for (const billLocator of billsLocator) {
       billDetail.locator(".bill-amount").textContent(),
     ]);
 
+    // Skip the '自动还款' bill
+    if (billName === '自动还款') {
+      continue;
+    }
+
     if (!billListByDate[currentDate]) {
       billListByDate[currentDate] = [];
     }
